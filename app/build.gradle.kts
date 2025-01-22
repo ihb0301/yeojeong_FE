@@ -7,6 +7,8 @@ android {
     namespace = "com.example.yeojeong"
     compileSdk = 35
 
+    viewBinding.isEnabled = true
+
     defaultConfig {
         applicationId = "com.example.yeojeong"
         minSdk = 24
