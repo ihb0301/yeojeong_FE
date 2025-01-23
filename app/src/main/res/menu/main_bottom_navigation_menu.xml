@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_home"
+        android:enabled="true"
+        android:icon="@drawable/nav_home_icon"
+        android:title="홈" />
+    <item
+        android:id="@+id/page_diary"
+        android:enabled="true"
+        android:icon="@drawable/nav_diary_icon"
+        android:title="일기" />
+    <item
+        android:id="@+id/page_plan"
+        android:enabled="true"
+        android:icon="@drawable/nav_plan_icon"
+        android:title="계획" />
+    <item
+        android:id="@+id/page_explore"
+        android:enabled="true"
+        android:icon="@drawable/nav_explore_icon"
+        android:title="탐색" />
+    <item
+        android:id="@+id/page_profile"
+        android:enabled="true"
+        android:icon="@drawable/nav_profile_icon"
+        android:title="프로필" />
+</menu>

@@ -21,5 +21,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //BottomNavigation 아이콘 틴트 적용 해제
+        binding.mainBottomNavigation.itemIconTintList=null
     }
 }
