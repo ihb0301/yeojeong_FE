@@ -45,10 +45,6 @@ class MainActivity : AppCompatActivity() {
                     binding.mainViewpager.currentItem = 2
                     true
                 }
-                R.id.page_explore -> {
-                    binding.mainViewpager.currentItem = 3
-                    true
-                }
                 R.id.page_profile -> {
                     binding.mainViewpager.currentItem = 4
                     true
