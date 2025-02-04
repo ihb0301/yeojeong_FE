@@ -3,21 +3,21 @@
     <item
         android:id="@+id/page_home"
         android:enabled="true"
-        android:icon="@drawable/nav_home_icon"
+        android:icon="@drawable/nav_home"
         android:title="홈" />
     <item
         android:id="@+id/page_chat"
         android:enabled="true"
-        android:icon="@drawable/nav_profile_icon"
+        android:icon="@drawable/nav_chat"
         android:title="채팅" />
     <item
         android:id="@+id/page_plan"
         android:enabled="true"
-        android:icon="@drawable/nav_plan_icon"
+        android:icon="@drawable/nav_plan"
         android:title="계획" />
     <item
         android:id="@+id/page_diary"
         android:enabled="true"
-        android:icon="@drawable/nav_diary_icon"
+        android:icon="@drawable/nav_diary"
         android:title="일기" />
 </menu>

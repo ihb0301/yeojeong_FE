@@ -19,9 +19,9 @@
         style="@style/Widget.App.BottomNavigationView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:itemBackground="@drawable/nav_background"
+        android:background="@color/white"
         app:itemTextColor="@color/nav_text"
-        app:labelVisibilityMode="labeled"
+        app:labelVisibilityMode="unlabeled"
         app:menu="@menu/main_bottom_navigation_menu" />
 
 </LinearLayout>
