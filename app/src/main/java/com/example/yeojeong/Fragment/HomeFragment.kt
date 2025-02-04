@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.yeojeong.Adapter.HomeRcvPopularAdapter
 import com.example.yeojeong.Adapter.HomeRcvRecentAdapter
+import com.example.yeojeong.Adapter.HomeRcvRecentDecoration
 import com.example.yeojeong.R
 import com.example.yeojeong.databinding.FragmentHomeBinding
 
@@ -45,6 +46,7 @@ class HomeFragment : Fragment() {
         binding.homeRecentRecyclerView.layoutManager = LinearLayoutManager(activity)
             .apply{ orientation=LinearLayoutManager.HORIZONTAL }
         binding.homeRecentRecyclerView.adapter= HomeRcvRecentAdapter(list1)
+        binding.homeRecentRecyclerView.addItemDecoration(HomeRcvRecentDecoration(binding.root.context,list1.size))
 
 
         // Inflate the layout for this fragment

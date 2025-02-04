@@ -3,7 +3,7 @@
     android:id="@+id/rcv_home_recent_layout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="15dp">
+    android:layout_marginTop="24dp">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -37,6 +37,7 @@
         android:layout_below="@id/rcv_home_recent_layout_image"
         android:layout_marginTop="20dp"
         android:text="이름"
-        android:textSize="10sp" />
+        android:textSize="10sp"
+        android:textColor="@color/black"/>
 
 </RelativeLayout>

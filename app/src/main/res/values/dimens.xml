@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rcv_home_recent_margin">26dp</dimen>
+    <dimen name="rcv_home_recent_space">13dp</dimen>
+</resources>
