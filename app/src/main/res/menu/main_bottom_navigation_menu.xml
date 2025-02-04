@@ -6,18 +6,18 @@
         android:icon="@drawable/nav_home_icon"
         android:title="홈" />
     <item
-        android:id="@+id/page_diary"
+        android:id="@+id/page_chat"
         android:enabled="true"
-        android:icon="@drawable/nav_diary_icon"
-        android:title="일기" />
+        android:icon="@drawable/nav_profile_icon"
+        android:title="채팅" />
     <item
         android:id="@+id/page_plan"
         android:enabled="true"
         android:icon="@drawable/nav_plan_icon"
         android:title="계획" />
     <item
-        android:id="@+id/page_profile"
+        android:id="@+id/page_diary"
         android:enabled="true"
-        android:icon="@drawable/nav_profile_icon"
-        android:title="프로필" />
+        android:icon="@drawable/nav_diary_icon"
+        android:title="일기" />
 </menu>

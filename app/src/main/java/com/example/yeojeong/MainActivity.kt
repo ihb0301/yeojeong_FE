@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                     binding.mainViewpager.currentItem = 0
                     true
                 }
-                R.id.page_diary -> {
+                R.id.page_chat -> {
                     binding.mainViewpager.currentItem = 1
                     true
                 }
@@ -45,8 +45,8 @@ class MainActivity : AppCompatActivity() {
                     binding.mainViewpager.currentItem = 2
                     true
                 }
-                R.id.page_profile -> {
-                    binding.mainViewpager.currentItem = 4
+                R.id.page_diary -> {
+                    binding.mainViewpager.currentItem = 3
                     true
                 }
                 else -> {
