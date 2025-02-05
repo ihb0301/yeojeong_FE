@@ -1,6 +1,12 @@
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+}
+
+fun getApiKey(key: String): String {
+    return gradleLocalProperties(rootDir, providers).getProperty(key)
 }
 
 android {
@@ -10,13 +16,20 @@ android {
     viewBinding.isEnabled = true
 
     defaultConfig {
+        manifestPlaceholders["GOOGLE_MAP_API_KEY"] = getApiKey("GOOGLE_MAP_API_KEY")
+
         applicationId = "com.example.yeojeong"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {
@@ -39,6 +52,7 @@ android {
 
 dependencies {
 
+    implementation(libs.play.services.maps)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
