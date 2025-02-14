@@ -1,5 +1,6 @@
 package com.example.yeojeong
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -26,6 +27,12 @@ class PlanViewActivity : AppCompatActivity() {
         binding.planViewDateRecyclerView.layoutManager = LinearLayoutManager(this).apply {orientation=LinearLayoutManager.HORIZONTAL}
         binding.planViewDateRecyclerView.adapter = PlanRcvDateAdapter(mutableListOf<String>("2/4","2/5","2/6","2/7","2/8"))
         binding.planViewDateRecyclerView.addItemDecoration(PlanRcvDateDecoration())
+
+        //지도 버튼 눌렀을 때 맵뷰 액티비티 표시
+        binding.planViewMapButton.setOnClickListener {
+            val intent: Intent =Intent(this,MapViewActivity::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
