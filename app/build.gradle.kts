@@ -17,7 +17,7 @@ android {
 
     defaultConfig {
         manifestPlaceholders["GOOGLE_MAP_API_KEY"] = getApiKey("GOOGLE_MAP_API_KEY")
-
+        buildConfigField("String","GOOGLE_MAP_API_KEY","\""+getApiKey("GOOGLE_MAP_API_KEY")+"\"")
         applicationId = "com.example.yeojeong"
         minSdk = 24
         targetSdk = 35
