@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Yeojeong"
         tools:targetApi="31">
         <activity
+            android:name=".InfoCardActivity"
+            android:exported="false" />
+        <activity
             android:name=".MapViewActivity"
             android:exported="false" />
         <activity

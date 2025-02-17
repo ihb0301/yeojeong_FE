@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoCardActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/infoCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:gravity="center"/>
+
+    <!--TODO API 30 이하에서 테두리 적용되도록 수정 필요-->
+    <ImageView
+        android:background="@drawable/rect_radius_38_border"
+        android:id="@+id/infoCardImage"
+        android:clipToOutline="true"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="15dp"
+        android:src="#D9D9D9"
+        android:layout_gravity="center" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/rect_radius_38_border"
+        android:backgroundTint="#D9D9D9"
+        android:clipToOutline="true"
+        android:layout_width="238dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="33dp"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="날짜"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/rect_radius_38_border"
+        android:backgroundTint="#D9D9D9"
+        android:clipToOutline="true"
+        android:layout_width="238dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="35dp"
+        android:src="#D9D9D9"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="장소"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/rect_radius_38_border"
+        android:backgroundTint="#D9D9D9"
+        android:clipToOutline="true"
+        android:layout_width="238dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="35dp"
+        android:src="#D9D9D9"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="동행자"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/rect_radius_38_border"
+        android:backgroundTint="#D9D9D9"
+        android:clipToOutline="true"
+        android:layout_width="238dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="35dp"
+        android:src="#D9D9D9"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="예산"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/rect_radius_38_border"
+        android:backgroundTint="#D9D9D9"
+        android:clipToOutline="true"
+        android:layout_width="238dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="35dp"
+        android:src="#D9D9D9"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="체크리스트"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

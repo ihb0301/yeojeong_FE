@@ -34,6 +34,12 @@ class PlanViewActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //인포카드 버튼 눌렀을 때 인포카드 액티비티 표시
+        binding.planViewInfoCard.setOnClickListener {
+            val intent: Intent =Intent(this,InfoCardActivity::class.java)
+            startActivity(intent)
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
