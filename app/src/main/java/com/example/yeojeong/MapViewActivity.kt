@@ -10,9 +10,12 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.yeojeong.ApplicationClass.Yeojeong
 import com.example.yeojeong.Retrofit.DirectionApiInterface
 import com.example.yeojeong.Retrofit.DirectionApiModel
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.PolylineOptions
 import com.google.maps.android.PolyUtil
 import retrofit2.Call
@@ -73,6 +76,13 @@ class MapViewActivity : AppCompatActivity(), OnMapReadyCallback {
                 }
 
                 googleMap!!.addPolyline(polyLineOptions)
+
+                /*카메라 시점 경로 근처로 이동*/
+                val bounds= LatLngBounds(
+                    LatLng(response.body()!!.routes.get(0).bounds.southwest.lat,response.body()!!.routes.get(0).bounds.southwest.lng),
+                    LatLng(response.body()!!.routes.get(0).bounds.northeast.lat,response.body()!!.routes.get(0).bounds.northeast.lng)
+                )
+                googleMap?.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds,100))
 
             }
 
