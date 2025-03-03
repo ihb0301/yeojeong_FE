@@ -16,6 +16,13 @@
         android:theme="@style/Theme.Yeojeong"
         tools:targetApi="31">
         <activity
+            android:name=".FindPwActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>

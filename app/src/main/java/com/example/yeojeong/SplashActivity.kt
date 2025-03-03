@@ -29,14 +29,14 @@ class SplashActivity : AppCompatActivity() {
         //Todo 로그인 여부 체크 필요
         var login: Boolean = true
 
-        //val intentRegister:Intent = Intent(this,MainActivity::class.java)
+        val intentLogin:Intent = Intent(this,LoginActivity::class.java)
         val intentMain:Intent = Intent(this,MainActivity::class.java)
         GlobalScope.launch{
             delay(500L)
             if(login){
                 startActivity(intentMain)
             }else{
-                //startActivity(intentRegister)
+                startActivity(intentLogin)
                 runOnUiThread {
                     binding.logoText.visibility = View.GONE
                     binding.logoImage.visibility = View.GONE
