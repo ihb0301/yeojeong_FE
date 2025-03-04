@@ -37,15 +37,15 @@ class MainActivity : AppCompatActivity() {
                     binding.mainViewpager.currentItem = 0
                     true
                 }
-                R.id.page_chat -> {
+                R.id.page_plan -> {
                     binding.mainViewpager.currentItem = 1
                     true
                 }
-                R.id.page_plan -> {
+                R.id.page_diary -> {
                     binding.mainViewpager.currentItem = 2
                     true
                 }
-                R.id.page_diary -> {
+                R.id.page_mypage -> {
                     binding.mainViewpager.currentItem = 3
                     true
                 }

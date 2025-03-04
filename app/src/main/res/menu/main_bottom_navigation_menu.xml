@@ -6,11 +6,6 @@
         android:icon="@drawable/nav_home"
         android:title="홈" />
     <item
-        android:id="@+id/page_chat"
-        android:enabled="true"
-        android:icon="@drawable/nav_chat"
-        android:title="채팅" />
-    <item
         android:id="@+id/page_plan"
         android:enabled="true"
         android:icon="@drawable/nav_plan"
@@ -20,4 +15,9 @@
         android:enabled="true"
         android:icon="@drawable/nav_diary"
         android:title="일기" />
+    <item
+        android:id="@+id/page_mypage"
+        android:enabled="true"
+        android:icon="@drawable/nav_mypage"
+        android:title="마이페이지" />
 </menu>
