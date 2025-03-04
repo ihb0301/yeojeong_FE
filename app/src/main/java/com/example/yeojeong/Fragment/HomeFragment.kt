@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,11 +16,6 @@ import com.example.yeojeong.Adapter.HomeRcvRecentDecoration
 import com.example.yeojeong.R
 import com.example.yeojeong.databinding.FragmentHomeBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +43,7 @@ class HomeFragment : Fragment() {
         binding.homeRecentRecyclerView.adapter= HomeRcvRecentAdapter(list1)
         binding.homeRecentRecyclerView.addItemDecoration(HomeRcvRecentDecoration(binding.root.context,list1.size))
 
+        //parentFragmentManager.beginTransaction().replace(container!!.id,SearchFragment()).commit()
 
         // Inflate the layout for this fragment
         return binding.root
@@ -57,5 +53,27 @@ class HomeFragment : Fragment() {
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.home_toolbar_menu,menu)
         super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.home_toolbar_search->{
+                parentFragmentManager.beginTransaction().apply{
+                    replace(R.id.home_frame_layout,SearchFragment())
+                    commit()
+                }
+            }
+            R.id.home_toolbar_notification->{
+                parentFragmentManager.beginTransaction().apply{
+                    replace(R.id.home_frame_layout,NotificationFragment())
+                    commit()
+                }
+            }
+            else->{
+
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }
