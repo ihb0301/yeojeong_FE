@@ -5,4 +5,6 @@
     <color name="nav_accent_background">#C1CAE2</color>
     <color name="nav_background">@color/white</color>
     <color name="nav_text">@color/black</color>
+    <color name="mypage_button_sel">#8398CA</color>
+    <color name="mypage_button">#D9D9D9</color>
 </resources>

@@ -91,7 +91,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/category_button1"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:backgroundTint="#8398CA"
@@ -107,7 +107,7 @@
                 app:cornerRadius="20dp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/category_button2"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="17dp"
@@ -124,7 +124,7 @@
                 app:cornerRadius="20dp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/category_button3"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="17dp"
