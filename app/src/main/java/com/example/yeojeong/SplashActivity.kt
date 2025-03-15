@@ -38,7 +38,6 @@ class SplashActivity : AppCompatActivity() {
             }else{
                 startActivity(intentLogin)
                 runOnUiThread {
-                    binding.logoText.visibility = View.GONE
                     binding.logoImage.visibility = View.GONE
                     binding.splashProgressBar.visibility = View.VISIBLE
                 }
